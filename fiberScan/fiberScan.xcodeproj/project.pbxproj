@@ -13,6 +13,7 @@
 		83E3C02F2396BB9B002686D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C02D2396BB9B002686D5 /* Main.storyboard */; };
 		83E3C0312396BB9C002686D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C0302396BB9C002686D5 /* Assets.xcassets */; };
 		83E3C0342396BB9C002686D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C0322396BB9C002686D5 /* LaunchScreen.storyboard */; };
+		83E3C03D2396C26E002686D5 /* Historique.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C03B2396C26E002686D5 /* Historique.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83E3C0302396BB9C002686D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83E3C0332396BB9C002686D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83E3C0352396BB9C002686D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E3C03C2396C26E002686D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = fiberScan/Base.lproj/Historique.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				83E3C0292396BB9B002686D5 /* SceneDelegate.swift */,
 				83E3C02B2396BB9B002686D5 /* ViewController.swift */,
 				83E3C02D2396BB9B002686D5 /* Main.storyboard */,
+				83E3C03B2396C26E002686D5 /* Historique.storyboard */,
 				83E3C0302396BB9C002686D5 /* Assets.xcassets */,
 				83E3C0322396BB9C002686D5 /* LaunchScreen.storyboard */,
 				83E3C0352396BB9C002686D5 /* Info.plist */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E3C0342396BB9C002686D5 /* LaunchScreen.storyboard in Resources */,
+				83E3C03D2396C26E002686D5 /* Historique.storyboard in Resources */,
 				83E3C0312396BB9C002686D5 /* Assets.xcassets in Resources */,
 				83E3C02F2396BB9B002686D5 /* Main.storyboard in Resources */,
 			);
@@ -161,6 +165,14 @@
 				83E3C0332396BB9C002686D5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		83E3C03B2396C26E002686D5 /* Historique.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83E3C03C2396C26E002686D5 /* Base */,
+			);
+			name = Historique.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
