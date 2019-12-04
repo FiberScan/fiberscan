@@ -27,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photo"/>
                                 <connections>
-                                    <segue destination="NsH-Kg-d5F" kind="show" id="1l3-tM-HTc"/>
+                                    <segue destination="dSf-eD-0Ct" kind="show" id="1l3-tM-HTc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,6 +91,31 @@
             </objects>
             <point key="canvasLocation" x="3213" y="-731"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qc4-pL-cKA">
+            <objects>
+                <viewController id="dSf-eD-0Ct" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwf-l7-iP6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mh-xs-LTC">
+                                <rect key="frame" x="140" y="427" width="115" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fNn-wb-JLb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oyB-lr-EkL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCm-wr-74P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3334.7826086956525" y="-281.25"/>
+        </scene>
         <!--Favoris-->
         <scene sceneID="8p8-L8-8Pa">
             <objects>
@@ -101,16 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBD-PW-GHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2949" y="203"/>
-        </scene>
-        <!--Informations-->
-        <scene sceneID="TQH-Dd-sun">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Informations" id="NsH-Kg-d5F" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="f1Y-z3-Srm"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0y9-Ee-m5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3334.7826086956525" y="-281.25"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
