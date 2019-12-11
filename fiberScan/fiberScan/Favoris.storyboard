@@ -10,7 +10,7 @@
         <!--Item-->
         <scene sceneID="ZAA-f6-YTX">
             <objects>
-                <viewController id="4Zw-1k-TsL" sceneMemberID="viewController">
+                <viewController id="4Zw-1k-TsL" customClass="FavorisViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jeF-th-dyq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
