@@ -26,8 +26,10 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var noteMainProduct: UILabel!
     
     @IBOutlet weak var addFavorites: UIButton!
-        let image1 = UIImage(named: "empty") as UIImage?
-        let image2 = UIImage(named: "filled") as UIImage?
+    let emptyHeart = UIImage(named : "heart")
+    let fullHeart = UIImage(named : "heart.fill")
+    
+    
     
     
     // TableView
@@ -85,9 +87,9 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     @IBAction func onOffButton(_ sender: Any) {
         buttonIsSelected = !buttonIsSelected
             if buttonIsSelected == true {
-                addFavorites.tintColor = .systemGreen
+
             } else if buttonIsSelected == false {
-                addFavorites.tintColor = .systemBlue
+
             }
             saveBool(bool: buttonIsSelected)
         }
@@ -100,7 +102,9 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
             print("favorite remove")
         }
     }
-    
+  
 }
     
     
+
+// Code couleur du vert : #2ECC71

@@ -182,6 +182,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-Gq-uUY">
                                 <rect key="frame" x="370" y="99" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="heart" catalog="system"/>
                                 <connections>
                                     <action selector="onOffButton:" destination="dSf-eD-0Ct" eventType="touchUpInside" id="5BX-ef-nlP"/>
