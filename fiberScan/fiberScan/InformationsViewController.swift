@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InformationsViewController: UIViewController {
+class InformationsViewController: UIViewController, UITableViewDataSource {
     
     var buttonIsSelected = false
     
@@ -46,6 +46,7 @@ class InformationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableViewMainProduct.dataSource = self
         }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,7 +56,18 @@ class InformationsViewController: UIViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return informations.count
     }
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let informationsToDisplay = informations[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "informationsCell", for: indexPath)
+        
+        cell.textLabel?.text = "\(informationsToDisplay.category)"
+        
+        cell.detailTextLabel?.text = informationsToDisplay.score
+        
+        return cell
+    }
     
     /*
     MARK: - Navigation

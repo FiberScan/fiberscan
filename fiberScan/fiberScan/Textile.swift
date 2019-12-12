@@ -13,20 +13,22 @@ struct Textile {
     var brand: String = ""
     var barCode: String = ""
     var name: String = ""
+    var note: Note
+    var type: TypeOfClothes
     var favorite: Bool = false
-    var image = UIImage(named:"image")
+    var image : UIImage?
     static var clothes : [String] = [] // tableau
 
-    enum typeOfClothes {
+    enum TypeOfClothes {
         case tshirt, dress, shoes, sheets, pants, underwear, sweater
     }
 
-    enum typeOfEvaluation {
+    enum TypeOfEvaluation {
         case environnement, health, human
     }
 
     struct Note {
-        var type: typeOfEvaluation
+        var type: TypeOfEvaluation
         var value: Int
         var info: String
     }
