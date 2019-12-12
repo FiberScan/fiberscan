@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InformationsViewController: UIViewController, UITableViewDataSource {
+class InformationsViewController: UIViewController {
     
     var buttonIsSelected = false
     
@@ -46,7 +46,6 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableViewMainProduct.dataSource = self
         }
     
     func numberOfSections(in tableView: UITableView) -> Int {
