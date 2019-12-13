@@ -9,22 +9,37 @@
 import UIKit
 
 class EnvironnementDetailViewController: UIViewController {
-
+    @IBOutlet weak var onOffButton: UIButton!
+    var buttonIsSelected = false
+    var changeFav = Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonPressed(_ sender: Any) {
+        buttonIsSelected = !buttonIsSelected
+        if buttonIsSelected == true {
+        } else if buttonIsSelected == false {
+        }
+        saveBool(bool: buttonIsSelected)
     }
-    */
+    
+    func saveBool(bool: Bool) {
+        if bool == true {
+          changeFav.favorite = bool
+              onOffButton.setImage(UIImage (systemName: "heart.fill"), for: .normal)
+          print("favorite added")
+          print(changeFav.favorite)
+        }else if bool == false {
+          changeFav.favorite = bool
+              onOffButton.setImage(UIImage (systemName: "heart"), for: .normal)
+              print("favorite remove")
+          print(changeFav.favorite)
+        }
+    }
+    
 
 }
