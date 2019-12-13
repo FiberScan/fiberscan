@@ -6,18 +6,15 @@
 //  Copyright © 2019 Chris. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class InformationsViewController: UIViewController, UITableViewDataSource {
     
     var buttonIsSelected = false
     
-    struct Information {
-        var category: String
-        var score: String
-    }
     
-    let informations: [Information] = [Information(category: "Humain", score: "30/100"), Information(category: "Environnement", score: "32/100"), Information(category: "Santé", score: "31/100")]
+    let textiles: [Textile] = [Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)]
     
     
     // Produit principal
@@ -28,8 +25,6 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var addFavorites: UIButton!
     let emptyHeart = UIImage(named : "heart")
     let fullHeart = UIImage(named : "heart.fill")
-    
-    
     
     
     // TableView
@@ -56,17 +51,17 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return informations.count
+        return textiles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let informationsToDisplay = informations[indexPath.row]
+        let textilesToDisplay = textiles[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "informationsCell", for: indexPath)
         
-        cell.textLabel?.text = "\(informationsToDisplay.category)"
-        
-        cell.detailTextLabel?.text = informationsToDisplay.score
+        cell.textLabel?.text = "\(textilesToDisplay.name)"
+
+        cell.detailTextLabel?.text = "\(textilesToDisplay.note)"
         
         return cell
     }
