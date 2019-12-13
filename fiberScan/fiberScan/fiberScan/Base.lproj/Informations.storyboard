@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dSf-eD-0Ct">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dSf-eD-0Ct">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="3456.521739130435" y="-299.33035714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Environnement Detail View Controller-->
         <scene sceneID="ECw-OF-Lhd">
             <objects>
-                <viewController id="SiR-I0-fSw" sceneMemberID="viewController">
+                <viewController id="SiR-I0-fSw" customClass="EnvironnementDetailViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YV6-2P-iHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +257,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UK-tG-vbR">
                                 <rect key="frame" x="371" y="67" width="23" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="SiR-I0-fSw" eventType="touchUpInside" id="kWG-Vy-TaU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score 31/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-hm-2AI">
                                 <rect key="frame" x="158" y="99" width="99" height="21"/>
@@ -274,15 +278,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ahO-EV-z98"/>
                     </view>
+                    <connections>
+                        <outlet property="onOffButton" destination="0UK-tG-vbR" id="AAq-GA-P0o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mF3-3s-ViT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4438" y="-299"/>
         </scene>
-        <!--View Controller-->
+        <!--Humain Detail View Controller-->
         <scene sceneID="aii-oH-5HS">
             <objects>
-                <viewController id="R2G-24-BOg" sceneMemberID="viewController">
+                <viewController id="R2G-24-BOg" customClass="HumainDetailViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jir-2x-dDh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,7 +335,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFB-dG-mxg">
                                 <rect key="frame" x="371" y="67" width="23" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="R2G-24-BOg" eventType="touchUpInside" id="Fb5-SE-u9t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score 31/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfT-0l-Y7y">
                                 <rect key="frame" x="158" y="99" width="99" height="21"/>
@@ -341,15 +352,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="udL-za-nwD"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonIsSelected" destination="iFB-dG-mxg" id="kGd-IR-qZb"/>
+                        <outlet property="onOffButoon" destination="iFB-dG-mxg" id="bSl-uO-pND"/>
+                        <outlet property="onOffButton" destination="iFB-dG-mxg" id="sQx-d7-FT2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgD-e1-kDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4437.68115942029" y="-1148.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Sante Detail View Controller-->
         <scene sceneID="boU-bm-8e5">
             <objects>
-                <viewController id="TCE-G1-Gis" sceneMemberID="viewController">
+                <viewController id="TCE-G1-Gis" customClass="SanteDetailViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XHH-rl-2es">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,7 +411,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcD-1H-kpO">
                                 <rect key="frame" x="371" y="67" width="23" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="TCE-G1-Gis" eventType="touchUpInside" id="mvp-1T-pZZ"/>
+                                    <action selector="onOffButtonpressed:" destination="TCE-G1-Gis" eventType="touchUpInside" id="ame-sC-HPo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score 31/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05i-gf-oaq">
                                 <rect key="frame" x="158" y="99" width="99" height="21"/>
@@ -408,6 +429,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="uMV-jr-gW5"/>
                     </view>
+                    <connections>
+                        <outlet property="onOffButton" destination="zcD-1H-kpO" id="bZp-wz-f80"/>
+                        <outlet property="onOffButtonSante" destination="zcD-1H-kpO" id="THK-TU-fx0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bF4-ac-kyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
