@@ -20,7 +20,7 @@ class InformationsViewController: UITableViewController {
     @IBOutlet weak var noteMainProduct: UILabel!
     
     
-    // Bouton favoris
+    // Bouton Favori
     @IBOutlet weak var onOffButton: UIButton!
      var buttonIsSelected = false
 
@@ -62,7 +62,7 @@ class InformationsViewController: UITableViewController {
     }
     */
     
-    // Bouton Favoris
+    // Sélectionné le bouton Favori
     @IBAction func buttonPressed(_ sender: Any) {
         buttonIsSelected = !buttonIsSelected
             if buttonIsSelected == true {
@@ -71,6 +71,7 @@ class InformationsViewController: UITableViewController {
             saveBool(bool: buttonIsSelected)
         }
     
+    // Donner sa couleur au bouton Favori
     func saveBool(bool: Bool) {
         if bool == true {
             textiles.favorite = bool
@@ -84,6 +85,7 @@ class InformationsViewController: UITableViewController {
             print(textiles.favorite)
         }
     }
+
 }
 
     
