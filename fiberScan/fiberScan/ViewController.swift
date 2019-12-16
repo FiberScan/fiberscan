@@ -103,7 +103,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-    title = "Barcode Scanner"
+    title = "Scan"
         
         session.beginConfiguration()
 

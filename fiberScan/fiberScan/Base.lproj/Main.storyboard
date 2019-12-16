@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jgO-aY-zbX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jgO-aY-zbX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="2125" y="-800"/>
         </scene>
-        <!--Item-->
+        <!--Scanner-->
         <scene sceneID="wQY-99-yeY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lma-bh-JGG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jjH-iq-dp0"/>
+                    <tabBarItem key="tabBarItem" title="Scanner" selectedImage="barcode" catalog="system" id="jjH-iq-dp0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Cq-ed-UWX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -100,8 +100,14 @@
             <point key="canvasLocation" x="3334.7826086956525" y="-281.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barcode" catalog="system" width="64" height="46"/>
+    </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="76z-La-QgQ"/>
+=======
+>>>>>>> master
         <segue reference="ca4-WA-psu"/>
     </inferredMetricsTieBreakers>
 </document>

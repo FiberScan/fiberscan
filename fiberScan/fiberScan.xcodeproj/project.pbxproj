@@ -23,6 +23,7 @@
 		83E3C02F2396BB9B002686D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C02D2396BB9B002686D5 /* Main.storyboard */; };
 		83E3C0312396BB9C002686D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C0302396BB9C002686D5 /* Assets.xcassets */; };
 		83E3C0342396BB9C002686D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E3C0322396BB9C002686D5 /* LaunchScreen.storyboard */; };
+		8DBE8CEC23A3E13F0093C06F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8CEB23A3E13F0093C06F /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		83E3C0302396BB9C002686D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83E3C0332396BB9C002686D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83E3C0352396BB9C002686D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DBE8CEB23A3E13F0093C06F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				79658C5D23A248FF00FE615E /* HumainDetailViewController.swift */,
 				4107227823A1504D00BAFFB8 /* InformationsViewController.swift */,
 				83A744D32397B3A600E9FD7A /* Historique.storyboard */,
+				8DBE8CEB23A3E13F0093C06F /* CollectionViewCell.swift */,
 				4107227623A1501900BAFFB8 /* HistoriqueViewController.swift */,
 				83A744D62397B3C500E9FD7A /* Favoris.storyboard */,
 				4107227423A14DF000BAFFB8 /* FavorisViewController.swift */,
@@ -181,6 +184,7 @@
 				83E3C02A2396BB9B002686D5 /* SceneDelegate.swift in Sources */,
 				79658C5E23A248FF00FE615E /* HumainDetailViewController.swift in Sources */,
 				4107227723A1501900BAFFB8 /* HistoriqueViewController.swift in Sources */,
+				8DBE8CEC23A3E13F0093C06F /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

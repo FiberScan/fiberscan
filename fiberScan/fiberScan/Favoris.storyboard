@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Zw-1k-TsL">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRG-Hk-fSW">
+>>>>>>> master
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Favoris View Controller-->
         <scene sceneID="ZAA-f6-YTX">
             <objects>
                 <viewController id="4Zw-1k-TsL" customClass="FavorisViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,12 +31,34 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7Xw-Nl-8ak"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mbE-RT-sgm"/>
                     <navigationItem key="navigationItem" id="X9e-WH-caq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z85-YK-qc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="5704.347826086957" y="393.75"/>
+        </scene>
+        <!--Favoris-->
+        <scene sceneID="z9B-T0-yjw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRG-Hk-fSW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoris" selectedImage="heart" catalog="system" id="bHO-KT-gpv" userLabel="Favoris"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ira-0D-MHo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Zw-1k-TsL" kind="relationship" relationship="rootViewController" id="zc2-NL-Owd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzS-pS-9Ag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="4794.202898550725" y="393.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+    </resources>
 </document>
