@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Historique View Controller-->
+        <!--Historique-->
         <scene sceneID="QYg-jT-3DX">
             <objects>
                 <viewController id="gar-gH-skb" customClass="HistoriqueViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,7 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A1X-rL-RGD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sg5-2r-4kx"/>
+                    <navigationItem key="navigationItem" title="Historique" id="Sg5-2r-4kx" userLabel="Historique"/>
                     <connections>
                         <outlet property="collectionView" destination="bwQ-N6-zvR" id="Sri-MT-yDC"/>
                     </connections>
