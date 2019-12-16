@@ -24,11 +24,11 @@
             </objects>
             <point key="canvasLocation" x="2286" y="-629"/>
         </scene>
-        <!--Item-->
+        <!--Scanner-->
         <scene sceneID="wQY-99-yeY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lma-bh-JGG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jjH-iq-dp0"/>
+                    <tabBarItem key="tabBarItem" title="Scanner" selectedImage="barcode" catalog="system" id="jjH-iq-dp0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Cq-ed-UWX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -98,6 +98,9 @@
             <point key="canvasLocation" x="3334.7826086956525" y="-281.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barcode" catalog="system" width="64" height="46"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ca4-WA-psu"/>
     </inferredMetricsTieBreakers>

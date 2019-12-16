@@ -78,7 +78,7 @@
         <scene sceneID="Elz-1C-iSc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="60G-Qv-zQl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Historique" id="cfJ-kn-k15"/>
+                    <tabBarItem key="tabBarItem" title="Historique" selectedImage="list.bullet" catalog="system" id="cfJ-kn-k15"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bqz-eD-7AD">
@@ -96,6 +96,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="x.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>
