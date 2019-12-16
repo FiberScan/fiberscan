@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Textile {
+struct Textile: Equatable {
     var brand: String = ""
     var barCode: String = ""
     var name: String = ""
@@ -27,7 +27,7 @@ struct Textile {
         case environnement, health, human
     }
 
-    struct Note {
+    struct Note: Equatable {
         var type: TypeOfEvaluation
         var value: Int
         var info: String
