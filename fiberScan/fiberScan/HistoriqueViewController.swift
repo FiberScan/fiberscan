@@ -12,19 +12,23 @@ class HistoriqueViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let vet = Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)
+    let vet = Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil )
     let s = Textile.clothes
-//    let firstNote = (Textile.Note(type: .health, value: 34, info: "blabla")
-//    let secondNote = Textile.Note(type: .human, value: 50, info: "blabla")
-//    let thirdNote = Textile.Note(type: .environnement, value: 44, info: "blabla")
+//    
+//    func average() {
+//        let firstNote = Textile.Note(type: .health, value: 34, info: "blabla")
+//        let secondNote = Textile.Note(type: .human, value: 50, info: "blabla")
+//        let thirdNote = Textile.Note(type: .environnement, value: 44, info: "blabla")
+//        let avg = (firstNote.value + secondNote.value + thirdNote.value)/3
+//        print(avg)
+//    }
+ 
+    var data: [Textile] = [Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)]
     
-    var data: [Textile] = [Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)]
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -57,10 +61,9 @@ class HistoriqueViewController: UIViewController {
         
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.destination is InformationsViewController {
-//            data[indexPath.row]
-            
             }
         }
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell
         cell?.configure(with: data[indexPath.row])
         cell?.viewController = self

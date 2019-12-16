@@ -14,6 +14,8 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var buttonDel: UIButton!
     
+    @IBOutlet weak var labelCell: UILabel!
+    
     weak var viewController: HistoriqueViewController?
 
     private var textile: Textile!
@@ -30,9 +32,8 @@ class CollectionViewCell: UICollectionViewCell {
     public func configure(with model: Textile) {
         self.textile = model
         image.image = model.image
+        labelCell.text = String("\(model.note.value) /100")
     }
-
-
-    }
+}
 
 
