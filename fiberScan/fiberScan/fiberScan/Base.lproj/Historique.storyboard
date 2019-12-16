@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-N6-zvR">
-                                <rect key="frame" x="0.0" y="101" width="414" height="693"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-N6-zvR">
+                                <rect key="frame" x="10" y="98" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="8Yw-A3-8qN">
                                     <size key="itemSize" width="100" height="100"/>
@@ -31,7 +30,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="d9o-eh-SeA" customClass="CollectionViewCell" customModule="fiberScan" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bcO-xP-ZU8" customClass="CollectionViewCell" customModule="fiberScan" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bcO-xP-ZU8">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -42,17 +41,20 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-Z9-4aY">
                                                     <rect key="frame" x="81" y="0.0" width="20" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="x.circle" catalog="system">
-                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="x.circle" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="deleteElement:" destination="d9o-eh-SeA" eventType="touchUpInside" id="zZ4-Xe-ClW"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="100" height="100"/>
                                         <connections>
+                                            <outlet property="buttonDel" destination="Ysf-Z9-4aY" id="rQm-3Q-LUd"/>
                                             <outlet property="image" destination="cMd-NS-PxE" id="a5a-AV-y3K"/>
+                                            <segue destination="Ys2-cq-brA" kind="presentation" identifier="showinfo" id="iUm-Dd-Rsh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -63,6 +65,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bwQ-N6-zvR" firstAttribute="top" secondItem="A1X-rL-RGD" secondAttribute="top" constant="10" id="Lkc-mG-880"/>
+                            <constraint firstItem="bwQ-N6-zvR" firstAttribute="trailing" secondItem="A1X-rL-RGD" secondAttribute="trailing" constant="10" id="Prz-fd-lf1"/>
+                            <constraint firstItem="A1X-rL-RGD" firstAttribute="bottom" secondItem="bwQ-N6-zvR" secondAttribute="bottom" constant="10" id="hdi-DD-jKd"/>
+                            <constraint firstItem="bwQ-N6-zvR" firstAttribute="leading" secondItem="A1X-rL-RGD" secondAttribute="leading" constant="10" id="yUi-N1-Atf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="A1X-rL-RGD"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sg5-2r-4kx"/>
@@ -73,6 +81,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cci-9s-X0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="-84.375"/>
+        </scene>
+        <!--Informations-->
+        <scene sceneID="ZLx-Ba-hy3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Informations" id="Ys2-cq-brA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aOu-D5-b2m"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3p-eJ-QMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="-161"/>
         </scene>
         <!--Historique-->
         <scene sceneID="Elz-1C-iSc">
