@@ -88,9 +88,12 @@ class InformationsViewController: UITableViewController {
 
 }
 
-    
-    
-
 
 
 // Code couleur du vert : #2ECC71
+
+
+
+
+// Reste à faire :  Modifier les notes selon les produits
+//                  Remplir les boutons favoris sur tous les écrans
