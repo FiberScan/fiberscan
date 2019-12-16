@@ -6,15 +6,19 @@
 //  Copyright © 2019 Chris. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class InformationsViewController: UIViewController, UITableViewDataSource {
+class InformationsViewController: UITableViewController {
+
+    
+
+    @IBOutlet weak var onOffButton: UIButton!
+
     
     var buttonIsSelected = false
     
-    
-    let textiles: [Textile] = [Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)]
+    // Textile
+    var textiles = Textile(brand: "", barCode: "", name: "", note: Textile.Note(type: .health , value: 34, info: ""), type: .dress, favorite: false, image: nil)
     
     
     // Produit principal
@@ -22,6 +26,13 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var nameMainProduct: UILabel!
     @IBOutlet weak var noteMainProduct: UILabel!
     
+    
+    
+    
+    
+    
+    
+    // Bouton favoris
     @IBOutlet weak var addFavorites: UIButton!
     let emptyHeart = UIImage(named : "heart")
     let fullHeart = UIImage(named : "heart.fill")
@@ -30,41 +41,26 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     // TableView
     @IBOutlet weak var tableViewMainProduct: UITableView!
     
+    @IBOutlet weak var tableViewHumain: UITableViewCell!
+    @IBOutlet weak var tableViewEnvironnement: UITableViewCell!
+    @IBOutlet weak var tableViewSante: UITableViewCell!
+    
+    
+    
     // Produits alternatifs
     @IBOutlet weak var alternativeProducts: UILabel!
+    
     @IBOutlet weak var imageAlternativeProductLeft: UIImageView!
     @IBOutlet weak var nameAlternativeProductLeft: UILabel!
     @IBOutlet weak var scoreAlternativeProductLeft: UILabel!
-    @IBOutlet weak var imageAlternativeProductRight: UIImageView!
     
+    @IBOutlet weak var imageAlternativeProductRight: UIImageView!
     @IBOutlet weak var nameAlternativeProductRight: UILabel!
     @IBOutlet weak var scoreAlternativeProductRight: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableViewMainProduct.dataSource = self
         }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return textiles.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let textilesToDisplay = textiles[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "informationsCell", for: indexPath)
-        
-        cell.textLabel?.text = "\(textilesToDisplay.name)"
-
-        cell.detailTextLabel?.text = "\(textilesToDisplay.note)"
-        
-        return cell
-    }
     
     /*
     MARK: - Navigation
@@ -76,30 +72,36 @@ class InformationsViewController: UIViewController, UITableViewDataSource {
     }
     */
     
-    
+
     
     // Bouton Favoris
     @IBAction func onOffButton(_ sender: Any) {
         buttonIsSelected = !buttonIsSelected
             if buttonIsSelected == true {
-
             } else if buttonIsSelected == false {
-
             }
             saveBool(bool: buttonIsSelected)
         }
     
     func saveBool(bool: Bool) {
         if bool == true {
+            textiles.favorite = bool
+                onOffButton.setImage(UIImage (systemName: "heart.fill"), for: .normal)
             print("favorite added")
-            
+            print(textiles.favorite)
         } else if bool == false {
-            print("favorite remove")
+            textiles.favorite = bool
+                onOffButton.setImage(UIImage (systemName: "heart"), for: .normal)
+                print("favorite remove")
+            print(textiles.favorite)
         }
     }
-  
+
 }
+
     
     
+
+
 
 // Code couleur du vert : #2ECC71

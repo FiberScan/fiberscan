@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fiberScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="-629"/>
+            <point key="canvasLocation" x="2125" y="-800"/>
         </scene>
         <!--Item-->
         <scene sceneID="wQY-99-yeY">
@@ -59,6 +59,7 @@
                         <segue destination="Lma-bh-JGG" kind="relationship" relationship="viewControllers" id="yre-U2-7VR"/>
                         <segue destination="wlT-NK-qyL" kind="relationship" relationship="viewControllers" id="0ah-5Z-uPK"/>
                         <segue destination="Pgx-J9-Ts7" kind="relationship" relationship="viewControllers" id="XTc-aD-cjw"/>
+                        <segue destination="NsH-Kg-d5F" kind="relationship" relationship="viewControllers" id="76z-La-QgQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6W-cF-ILw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -91,6 +92,7 @@
         <scene sceneID="TQH-Dd-sun">
             <objects>
                 <viewControllerPlaceholder storyboardName="Informations" id="NsH-Kg-d5F" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9yH-Dn-c6y"/>
                     <navigationItem key="navigationItem" id="f1Y-z3-Srm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0y9-Ee-m5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -99,6 +101,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="B8D-uI-gq7"/>
+        <segue reference="76z-La-QgQ"/>
+        <segue reference="ca4-WA-psu"/>
     </inferredMetricsTieBreakers>
 </document>
