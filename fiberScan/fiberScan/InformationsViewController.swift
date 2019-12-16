@@ -9,13 +9,6 @@
 import UIKit
 
 class InformationsViewController: UITableViewController {
-
-    
-
-    @IBOutlet weak var onOffButton: UIButton!
-
-    
-    var buttonIsSelected = false
     
     // Textile
     var textiles = Textile(brand: "", barCode: "", name: "", note: Textile.Note(type: .health , value: 34, info: ""), type: .dress, favorite: false, image: nil)
@@ -27,39 +20,36 @@ class InformationsViewController: UITableViewController {
     @IBOutlet weak var noteMainProduct: UILabel!
     
     
-    
-    
-    
-    
-    
-    // Bouton favoris
-    @IBOutlet weak var addFavorites: UIButton!
-    let emptyHeart = UIImage(named : "heart")
-    let fullHeart = UIImage(named : "heart.fill")
+    // Bouton Favori
+    @IBOutlet weak var onOffButton: UIButton!
+     var buttonIsSelected = false
+
     
     
     // TableView
-    @IBOutlet weak var tableViewMainProduct: UITableView!
+    @IBOutlet weak var cellHumain: UITableViewCell!
+    @IBOutlet weak var scoreCellHumain: UILabel!
     
-    @IBOutlet weak var tableViewHumain: UITableViewCell!
-    @IBOutlet weak var tableViewEnvironnement: UITableViewCell!
-    @IBOutlet weak var tableViewSante: UITableViewCell!
+    @IBOutlet weak var cellEnvironnement: UITableViewCell!
+    @IBOutlet weak var scoreCellEnvironnement: UILabel!
     
+    @IBOutlet weak var cellSante: UITableViewCell!
+    @IBOutlet weak var scoreCellSante: UILabel!
     
     
     // Produits alternatifs
-    @IBOutlet weak var alternativeProducts: UILabel!
-    
     @IBOutlet weak var imageAlternativeProductLeft: UIImageView!
     @IBOutlet weak var nameAlternativeProductLeft: UILabel!
-    @IBOutlet weak var scoreAlternativeProductLeft: UILabel!
+    @IBOutlet weak var noteAlternativeProductLeft: UILabel!
     
     @IBOutlet weak var imageAlternativeProductRight: UIImageView!
     @IBOutlet weak var nameAlternativeProductRight: UILabel!
-    @IBOutlet weak var scoreAlternativeProductRight: UILabel!
+    @IBOutlet weak var noteAlternativeProductRight: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         }
     
     /*
@@ -72,10 +62,8 @@ class InformationsViewController: UITableViewController {
     }
     */
     
-
-    
-    // Bouton Favoris
-    @IBAction func onOffButton(_ sender: Any) {
+    // Sélectionné le bouton Favori
+    @IBAction func buttonPressed(_ sender: Any) {
         buttonIsSelected = !buttonIsSelected
             if buttonIsSelected == true {
             } else if buttonIsSelected == false {
@@ -83,6 +71,7 @@ class InformationsViewController: UITableViewController {
             saveBool(bool: buttonIsSelected)
         }
     
+    // Donner sa couleur au bouton Favori
     func saveBool(bool: Bool) {
         if bool == true {
             textiles.favorite = bool

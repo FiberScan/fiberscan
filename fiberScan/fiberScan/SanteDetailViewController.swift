@@ -15,8 +15,6 @@ class SanteDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
@@ -40,5 +38,7 @@ class SanteDetailViewController: UIViewController {
           print(changeFav.favorite)
         }
     }
+    
+    
     
 }
