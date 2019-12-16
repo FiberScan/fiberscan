@@ -14,8 +14,8 @@
             filePath = "fiberScan/HistoriqueViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "HistoriqueViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "fiberScan/HistoriqueViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "HistoriqueViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "fiberScan/HistoriqueViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "fiberScan/HistoriqueViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

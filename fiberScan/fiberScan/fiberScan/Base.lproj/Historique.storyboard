@@ -78,6 +78,19 @@
                                     <outlet property="delegate" destination="gar-gH-skb" id="IQg-4A-psX"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-bx-HLk">
+                                <rect key="frame" x="323" y="88" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FSG-nF-e0f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Effacer tout">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDeleteAllAction:" destination="gar-gH-skb" eventType="touchUpInside" id="AAu-KK-9kZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -86,14 +99,17 @@
                             <constraint firstItem="A1X-rL-RGD" firstAttribute="trailing" secondItem="bwQ-N6-zvR" secondAttribute="trailing" constant="20" id="MdA-MD-xeg"/>
                             <constraint firstItem="bwQ-N6-zvR" firstAttribute="trailing" secondItem="A1X-rL-RGD" secondAttribute="trailing" constant="20" id="NAI-sI-0xV"/>
                             <constraint firstItem="bwQ-N6-zvR" firstAttribute="leading" secondItem="A1X-rL-RGD" secondAttribute="leading" constant="20" id="RAJ-38-0zn"/>
+                            <constraint firstItem="A1X-rL-RGD" firstAttribute="trailing" secondItem="qi8-bx-HLk" secondAttribute="trailing" constant="10" id="Zws-kE-4jQ"/>
                             <constraint firstItem="bwQ-N6-zvR" firstAttribute="top" secondItem="A1X-rL-RGD" secondAttribute="top" constant="10" id="bYX-sh-eVx"/>
                             <constraint firstItem="bwQ-N6-zvR" firstAttribute="leading" secondItem="A1X-rL-RGD" secondAttribute="leading" constant="20" id="dGd-nf-pq7"/>
                             <constraint firstItem="A1X-rL-RGD" firstAttribute="bottom" secondItem="bwQ-N6-zvR" secondAttribute="bottom" constant="10" id="pHD-zZ-jOu"/>
+                            <constraint firstItem="qi8-bx-HLk" firstAttribute="top" secondItem="A1X-rL-RGD" secondAttribute="top" id="rF1-Cn-mEz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A1X-rL-RGD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Historique" id="Sg5-2r-4kx" userLabel="Historique"/>
                     <connections>
+                        <outlet property="butonDeleteAll" destination="qi8-bx-HLk" id="Lta-lv-jKl"/>
                         <outlet property="collectionView" destination="bwQ-N6-zvR" id="Sri-MT-yDC"/>
                     </connections>
                 </viewController>

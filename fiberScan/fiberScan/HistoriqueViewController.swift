@@ -12,6 +12,8 @@ class HistoriqueViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var butonDeleteAll: UIButton!
+    
     let vet = Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil )
     let s = Textile.clothes
 //    
@@ -39,8 +41,12 @@ class HistoriqueViewController: UIViewController {
             data.remove(at: index)
             collectionView.reloadData()
         }
-    //
+    
+    @IBAction func buttonDeleteAllAction(_ sender: UIButton) {
+        data.removeAll()
+        collectionView.reloadData()
     }
+}
 
     /*
     // MARK: - Navigation
@@ -52,22 +58,20 @@ class HistoriqueViewController: UIViewController {
     }
     */
 
+
     extension HistoriqueViewController:UICollectionViewDelegate, UICollectionViewDataSource {
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.destination is InformationsViewController {
             }
         }
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell
         cell?.configure(with: data[indexPath.row])
         cell?.viewController = self
         return cell!
     }
-}
-
+ }
