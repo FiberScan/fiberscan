@@ -14,7 +14,19 @@ class FavorisViewController: UIViewController {
     @IBOutlet weak var FavorisCollectionView: UICollectionView!
     
     var data: [Textile] = [Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: true, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: true, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 34, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil)]
-       
+
+    var favorited : [Textile] = []
+    
+    func filtre() {
+        for i in 1...data.count {
+            let indexN = i - 1
+            if data[indexN].favorite == true {
+            favorited.append(data[indexN])
+            }
+        }
+    }
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +63,8 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 extension FavorisViewController:UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //if data[0].favorite == true {
-        return data.count
+        filtre()
+        return favorited.count
         //}
     }
 
