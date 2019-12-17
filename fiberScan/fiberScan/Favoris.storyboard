@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Stz-dr-a0C">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Stz-dr-a0C">
                                 <rect key="frame" x="20" y="98" width="374" height="705"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="uwe-PH-Cot">
                                     <size key="itemSize" width="110" height="120"/>
@@ -80,6 +79,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Stz-dr-a0C" firstAttribute="top" secondItem="hSr-wK-moV" secondAttribute="top" constant="10" id="BCz-vW-kmu"/>
+                            <constraint firstItem="hSr-wK-moV" firstAttribute="bottom" secondItem="Stz-dr-a0C" secondAttribute="bottom" constant="10" id="Tk3-hg-wS7"/>
+                            <constraint firstItem="Stz-dr-a0C" firstAttribute="leading" secondItem="hSr-wK-moV" secondAttribute="leading" constant="20" id="fsH-KO-fpQ"/>
+                            <constraint firstItem="hSr-wK-moV" firstAttribute="trailing" secondItem="Stz-dr-a0C" secondAttribute="trailing" constant="20" id="iE8-92-NVQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hSr-wK-moV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favoris" id="X9e-WH-caq"/>
