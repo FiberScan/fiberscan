@@ -25,12 +25,12 @@ class FavorisViewController: UIViewController {
             }
         }
     }
-
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        filtre()
         FavorisCollectionView.dataSource = self
         FavorisCollectionView.delegate = self
 
@@ -38,8 +38,8 @@ class FavorisViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func remove(textile: Textile) {
-              guard let index = data.firstIndex(of: textile) else { return }
-              data.remove(at: index)
+              guard let index = favorited.firstIndex(of: textile) else { return }
+              favorited.remove(at: index)
               FavorisCollectionView.reloadData()
           }
     
@@ -63,7 +63,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 extension FavorisViewController:UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        filtre()
+//        filtre()
         return favorited.count
         //}
     }
@@ -77,7 +77,7 @@ extension FavorisViewController:UICollectionViewDelegate, UICollectionViewDataSo
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellf", for: indexPath) as? CollectionViewCellFavoris
-              cell?.configure(with: data[indexPath.row])
+              cell?.configure(with: favorited[indexPath.row])
               cell?.viewController = self
     
               return cell!
