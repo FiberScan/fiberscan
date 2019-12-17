@@ -46,6 +46,7 @@ class CameraView: UIView {
     }
 }
 
+let fakeDataBase = ["5449000000996": Textile(brand: "Kiabi", barCode: "5449000000996", name: "Kiabi", note: .init(type: .environnement, value: 0, info: "Nul"), type: .dress, favorite: false, image: nil)]
 
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
@@ -55,19 +56,23 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var isShowingAlert = false
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        if !isShowingAlert,
+       
+        if self.presentedViewController == nil,
             metadataObjects.count > 0,
             metadataObjects.first is AVMetadataMachineReadableCodeObject,
-            let scan = metadataObjects.first as? AVMetadataMachineReadableCodeObject {
-            let alertController = UIAlertController(title: "Barcode Scanned", message: scan.stringValue, preferredStyle: .alert)
+            let scan = metadataObjects.first as? AVMetadataMachineReadableCodeObject{
+            
+            if let barcode = scan.stringValue, let textile = fakeDataBase[barcode] {
+                let info = UIStoryboard(name: "Informations", bundle: nil).instantiateViewController(identifier: "info") as! InformationsViewController
+                info.textiles = textile
+                let navVC = UINavigationController(rootViewController: info)
+                present(navVC, animated: true, completion: nil)
+            } else {
+                let alert = UIAlertController(title: "Produit inconnu", message: nil, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
+            }
 
-            isShowingAlert = true
-
-            alertController.addAction(UIAlertAction(title: "OK", style: .default) { action in
-                self.isShowingAlert = false
-            })
-
-            present(alertController, animated: true)
         }
     }
     
