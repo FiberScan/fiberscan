@@ -69,6 +69,7 @@
                                             <outlet property="buttonDelF" destination="BPj-i0-oWT" id="NH1-Dc-48s"/>
                                             <outlet property="imagefavoris" destination="P7c-Mt-eAt" id="qhn-XN-7c0"/>
                                             <outlet property="labelfavoris" destination="rvu-CF-aL6" id="bzl-OT-AQe"/>
+                                            <segue destination="rOA-Zr-rZr" kind="presentation" identifier="showdetails" id="0uB-VK-FI6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -89,6 +90,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z85-YK-qc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5704.347826086957" y="393.75"/>
+        </scene>
+        <!--Informations-->
+        <scene sceneID="Qec-0I-J45">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Informations" id="rOA-Zr-rZr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ECK-Qk-gTY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fY3-KV-dkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6324" y="202"/>
         </scene>
         <!--Favoris-->
         <scene sceneID="z9B-T0-yjw">

@@ -65,10 +65,13 @@ class HistoriqueViewController: UIViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.destination is InformationsViewController {
-            }
+              if segue.destination is InformationsViewController {
+              }
         }
+        
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell
         cell?.configure(with: data[indexPath.row])
         cell?.viewController = self
