@@ -46,8 +46,6 @@ class CameraView: UIView {
     }
 }
 
-let fakeDataBase = ["5449000000996": Textile(brand: "Kiabi", barCode: "5449000000996", name: "Kiabi", note: .init(type: .environnement, value: 0, info: "Nul"), type: .dress, favorite: false, image: nil)]
-
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var cameraView: CameraView!
