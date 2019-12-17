@@ -34,9 +34,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-Mt-eAt">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-Mt-eAt">
                                                     <rect key="frame" x="1" y="0.0" width="120" height="97"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPj-i0-oWT">
                                                     <rect key="frame" x="80" y="5" width="20" height="20"/>
@@ -47,9 +46,8 @@
                                                         <action selector="buttonDelActionF:" destination="eO4-ed-DvH" eventType="touchUpInside" id="Nrx-iL-0f8"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvu-CF-aL6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvu-CF-aL6">
                                                     <rect key="frame" x="0.0" y="102" width="120" height="18"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES"/>
                                                     </accessibility>
@@ -60,6 +58,10 @@
                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rvu-CF-aL6" secondAttribute="bottom" id="SZq-yy-NnX"/>
+                                                <constraint firstItem="rvu-CF-aL6" firstAttribute="top" secondItem="P7c-Mt-eAt" secondAttribute="bottom" id="jcm-u3-QVQ"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="120" height="120"/>
@@ -82,7 +84,7 @@
                         <constraints>
                             <constraint firstItem="Stz-dr-a0C" firstAttribute="top" secondItem="hSr-wK-moV" secondAttribute="top" constant="10" id="BCz-vW-kmu"/>
                             <constraint firstItem="hSr-wK-moV" firstAttribute="bottom" secondItem="Stz-dr-a0C" secondAttribute="bottom" constant="10" id="Tk3-hg-wS7"/>
-                            <constraint firstItem="Stz-dr-a0C" firstAttribute="leading" secondItem="hSr-wK-moV" secondAttribute="leading" constant="20" id="fsH-KO-fpQ"/>
+                            <constraint firstItem="Stz-dr-a0C" firstAttribute="leading" secondItem="hSr-wK-moV" secondAttribute="leading" constant="20" id="ggf-aS-QEb"/>
                             <constraint firstItem="hSr-wK-moV" firstAttribute="trailing" secondItem="Stz-dr-a0C" secondAttribute="trailing" constant="20" id="iE8-92-NVQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hSr-wK-moV"/>

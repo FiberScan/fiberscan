@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-N6-zvR">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-N6-zvR">
                                 <rect key="frame" x="20" y="98" width="374" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="8Yw-A3-8qN">
@@ -95,14 +95,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="A1X-rL-RGD" firstAttribute="bottom" secondItem="bwQ-N6-zvR" secondAttribute="bottom" constant="10" id="7eJ-9r-C1m"/>
-                            <constraint firstItem="bwQ-N6-zvR" firstAttribute="top" secondItem="A1X-rL-RGD" secondAttribute="top" constant="10" id="Baw-1B-8WK"/>
                             <constraint firstItem="A1X-rL-RGD" firstAttribute="trailing" secondItem="bwQ-N6-zvR" secondAttribute="trailing" constant="20" id="MdA-MD-xeg"/>
-                            <constraint firstItem="bwQ-N6-zvR" firstAttribute="trailing" secondItem="A1X-rL-RGD" secondAttribute="trailing" constant="20" id="NAI-sI-0xV"/>
                             <constraint firstItem="bwQ-N6-zvR" firstAttribute="leading" secondItem="A1X-rL-RGD" secondAttribute="leading" constant="20" id="RAJ-38-0zn"/>
                             <constraint firstItem="A1X-rL-RGD" firstAttribute="trailing" secondItem="qi8-bx-HLk" secondAttribute="trailing" constant="10" id="Zws-kE-4jQ"/>
                             <constraint firstItem="bwQ-N6-zvR" firstAttribute="top" secondItem="A1X-rL-RGD" secondAttribute="top" constant="10" id="bYX-sh-eVx"/>
-                            <constraint firstItem="bwQ-N6-zvR" firstAttribute="leading" secondItem="A1X-rL-RGD" secondAttribute="leading" constant="20" id="dGd-nf-pq7"/>
-                            <constraint firstItem="A1X-rL-RGD" firstAttribute="bottom" secondItem="bwQ-N6-zvR" secondAttribute="bottom" constant="10" id="pHD-zZ-jOu"/>
                             <constraint firstItem="qi8-bx-HLk" firstAttribute="top" secondItem="A1X-rL-RGD" secondAttribute="top" id="rF1-Cn-mEz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A1X-rL-RGD"/>
