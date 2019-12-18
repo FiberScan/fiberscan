@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQg-1c-uGe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQg-1c-uGe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -362,18 +362,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UK-tG-vbR">
-                                <rect key="frame" x="369" y="108" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="7J0-1b-l3o"/>
-                                    <constraint firstAttribute="height" constant="25" id="vl1-WS-71n"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button" image="heart" catalog="system"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="SiR-I0-fSw" eventType="touchUpInside" id="kWG-Vy-TaU"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 30/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-hm-2AI">
                                 <rect key="frame" x="163" y="143" width="115" height="25"/>
                                 <constraints>
@@ -405,16 +393,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ahO-EV-z98" firstAttribute="trailing" secondItem="4JU-hm-2AI" secondAttribute="trailing" constant="136" id="0tN-Pd-id0"/>
-                            <constraint firstItem="0UK-tG-vbR" firstAttribute="leading" secondItem="Ncb-Fv-FzB" secondAttribute="trailing" constant="80" id="5GR-SB-1B8"/>
                             <constraint firstItem="ahO-EV-z98" firstAttribute="bottom" secondItem="QPT-eE-eYU" secondAttribute="bottom" constant="74" id="5Pt-5n-4zI"/>
                             <constraint firstItem="QPT-eE-eYU" firstAttribute="top" secondItem="jBr-Ol-FXz" secondAttribute="bottom" constant="18" id="7cA-sx-z13"/>
                             <constraint firstItem="QPT-eE-eYU" firstAttribute="leading" secondItem="ahO-EV-z98" secondAttribute="leading" constant="20" id="CgT-wM-PIo"/>
                             <constraint firstItem="Kip-Pb-Jzd" firstAttribute="top" secondItem="ahO-EV-z98" secondAttribute="top" constant="17" id="E8Z-BN-kiF"/>
                             <constraint firstItem="Kip-Pb-Jzd" firstAttribute="leading" secondItem="ahO-EV-z98" secondAttribute="leading" constant="20" id="H2d-ct-WE9"/>
                             <constraint firstItem="jBr-Ol-FXz" firstAttribute="top" secondItem="Kip-Pb-Jzd" secondAttribute="bottom" constant="20" id="KfJ-22-zxk"/>
-                            <constraint firstItem="0UK-tG-vbR" firstAttribute="top" secondItem="ahO-EV-z98" secondAttribute="top" constant="20" id="N2c-2t-9QJ"/>
-                            <constraint firstItem="QPT-eE-eYU" firstAttribute="top" secondItem="0UK-tG-vbR" secondAttribute="bottom" constant="185" id="NJ5-Y2-JRZ"/>
-                            <constraint firstItem="ahO-EV-z98" firstAttribute="trailing" secondItem="0UK-tG-vbR" secondAttribute="trailing" constant="20" id="U18-uw-eLC"/>
                             <constraint firstItem="4JU-hm-2AI" firstAttribute="leading" secondItem="Kip-Pb-Jzd" secondAttribute="trailing" constant="8" id="VSG-Wd-yCR"/>
                             <constraint firstItem="Ncb-Fv-FzB" firstAttribute="leading" secondItem="Kip-Pb-Jzd" secondAttribute="trailing" constant="19" id="d2Q-rX-JfR"/>
                             <constraint firstItem="4JU-hm-2AI" firstAttribute="top" secondItem="Ncb-Fv-FzB" secondAttribute="bottom" constant="8" id="fiD-De-hhq"/>
@@ -427,9 +411,6 @@
                         <viewLayoutGuide key="safeArea" id="ahO-EV-z98"/>
                     </view>
                     <navigationItem key="navigationItem" title="Environnement" id="bNn-P1-tby"/>
-                    <connections>
-                        <outlet property="onOffButton" destination="0UK-tG-vbR" id="AAq-GA-P0o"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mF3-3s-ViT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,7 +432,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CHEMISE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP6-Xa-IU9">
-                                <rect key="frame" x="174" y="105" width="115" height="30"/>
+                                <rect key="frame" x="174" y="105" width="85.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -472,18 +453,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFB-dG-mxg">
-                                <rect key="frame" x="369" y="108" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="GZx-5E-wds"/>
-                                    <constraint firstAttribute="width" constant="25" id="iJu-iO-PKm"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button" image="heart" catalog="system"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="R2G-24-BOg" eventType="touchUpInside" id="Fb5-SE-u9t"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="score 30/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfT-0l-Y7y">
                                 <rect key="frame" x="163" y="143" width="101" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -505,28 +474,21 @@
                         <constraints>
                             <constraint firstItem="udL-za-nwD" firstAttribute="bottom" secondItem="ggt-ex-aFp" secondAttribute="bottom" constant="74" id="3BO-ec-Smb"/>
                             <constraint firstItem="FfT-0l-Y7y" firstAttribute="leading" secondItem="c2D-oJ-Uvi" secondAttribute="trailing" constant="8" id="8f8-XO-hGO"/>
-                            <constraint firstItem="ggt-ex-aFp" firstAttribute="top" secondItem="iFB-dG-mxg" secondAttribute="bottom" constant="185" id="9kA-Sg-zHS"/>
                             <constraint firstItem="udL-za-nwD" firstAttribute="trailing" secondItem="yuK-hl-f0E" secondAttribute="trailing" constant="185" id="BWs-3F-m5G"/>
                             <constraint firstItem="udL-za-nwD" firstAttribute="trailing" secondItem="ggt-ex-aFp" secondAttribute="trailing" constant="20" id="CAb-Di-loD"/>
                             <constraint firstItem="c2D-oJ-Uvi" firstAttribute="leading" secondItem="udL-za-nwD" secondAttribute="leading" constant="20" id="CQ0-4J-NjX"/>
                             <constraint firstItem="yuK-hl-f0E" firstAttribute="leading" secondItem="udL-za-nwD" secondAttribute="leading" constant="69" id="DsI-Rb-64U"/>
                             <constraint firstItem="WP6-Xa-IU9" firstAttribute="leading" secondItem="c2D-oJ-Uvi" secondAttribute="trailing" constant="19" id="Ebs-im-BCu"/>
-                            <constraint firstItem="iFB-dG-mxg" firstAttribute="top" secondItem="udL-za-nwD" secondAttribute="top" constant="20" id="EnR-U1-fHd"/>
-                            <constraint firstItem="iFB-dG-mxg" firstAttribute="leading" secondItem="WP6-Xa-IU9" secondAttribute="trailing" constant="80" id="FLm-kg-tw5"/>
                             <constraint firstItem="yuK-hl-f0E" firstAttribute="top" secondItem="FfT-0l-Y7y" secondAttribute="bottom" constant="98" id="SB7-5S-vTP"/>
                             <constraint firstItem="WP6-Xa-IU9" firstAttribute="top" secondItem="udL-za-nwD" secondAttribute="top" constant="17" id="VQ9-o9-Jay"/>
                             <constraint firstItem="yuK-hl-f0E" firstAttribute="top" secondItem="c2D-oJ-Uvi" secondAttribute="bottom" constant="20" id="awx-Hs-8VS"/>
                             <constraint firstItem="ggt-ex-aFp" firstAttribute="leading" secondItem="udL-za-nwD" secondAttribute="leading" constant="20" id="ejN-gI-oy2"/>
                             <constraint firstItem="c2D-oJ-Uvi" firstAttribute="top" secondItem="udL-za-nwD" secondAttribute="top" constant="17" id="k29-iE-30K"/>
                             <constraint firstItem="FfT-0l-Y7y" firstAttribute="top" secondItem="WP6-Xa-IU9" secondAttribute="bottom" constant="8" id="ps7-TN-5X0"/>
-                            <constraint firstItem="udL-za-nwD" firstAttribute="trailing" secondItem="iFB-dG-mxg" secondAttribute="trailing" constant="20" id="rej-gk-pbn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="udL-za-nwD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Humain" id="bRY-2g-VPp"/>
-                    <connections>
-                        <outlet property="onOffButton" destination="iFB-dG-mxg" id="sQx-d7-FT2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgD-e1-kDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -576,18 +538,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcD-1H-kpO">
-                                <rect key="frame" x="369" y="105" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="ShA-xK-B6L"/>
-                                    <constraint firstAttribute="width" constant="25" id="tBq-el-OqW"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button" image="heart" catalog="system"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="TCE-G1-Gis" eventType="touchUpInside" id="mvp-1T-pZZ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 33/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05i-gf-oaq">
                                 <rect key="frame" x="163" y="143" width="115" height="25"/>
                                 <constraints>
@@ -614,8 +564,6 @@
                             <constraint firstItem="nHY-5g-Xew" firstAttribute="top" secondItem="uMV-jr-gW5" secondAttribute="top" constant="17" id="9KL-9V-21g"/>
                             <constraint firstItem="7CE-Td-zAJ" firstAttribute="top" secondItem="uMV-jr-gW5" secondAttribute="top" constant="17" id="E01-r9-oEx"/>
                             <constraint firstItem="uMV-jr-gW5" firstAttribute="trailing" secondItem="05i-gf-oaq" secondAttribute="trailing" constant="136" id="PCC-ID-TGa"/>
-                            <constraint firstItem="zcD-1H-kpO" firstAttribute="top" secondItem="uMV-jr-gW5" secondAttribute="top" constant="17" id="Q94-ge-PW0"/>
-                            <constraint firstItem="zcD-1H-kpO" firstAttribute="leading" secondItem="7CE-Td-zAJ" secondAttribute="trailing" constant="80" id="ait-uV-kOB"/>
                             <constraint firstItem="7CE-Td-zAJ" firstAttribute="leading" secondItem="nHY-5g-Xew" secondAttribute="trailing" constant="19" id="b1e-Bh-ree"/>
                             <constraint firstItem="uMV-jr-gW5" firstAttribute="trailing" secondItem="BEr-lb-vNk" secondAttribute="trailing" constant="185" id="eYP-FT-kP0"/>
                             <constraint firstItem="uMV-jr-gW5" firstAttribute="trailing" secondItem="Btg-Pl-8yu" secondAttribute="trailing" constant="20" id="fu7-w4-Do6"/>
@@ -629,9 +577,6 @@
                         <viewLayoutGuide key="safeArea" id="uMV-jr-gW5"/>
                     </view>
                     <navigationItem key="navigationItem" title="Santé" id="VqE-7Z-ssZ"/>
-                    <connections>
-                        <outlet property="onOffButton" destination="zcD-1H-kpO" id="bZp-wz-f80"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bF4-ac-kyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
