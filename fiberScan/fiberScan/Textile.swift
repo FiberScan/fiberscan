@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-let fakeDataBase = ["5449000000996": Textile(brand: "test", barCode: "5449000000996", name: "chemise", note: .init(type: .environnement, value: 30, info: "Nul"), type: .dress, favorite: false, image: nil)]
+let fakeDataBase = ["8445035330890": Textile(brand: "MANGO", barCode: "8445035330890", name: "robe", note: .init(type: .environnement, value: 30, info: "Nul"), type: .dress, favorite: false, image: nil)]
+
+let fakeDataBase2 = ["5855481136712": Textile(brand: "C&A", barCode: "5855481136712", name: "chaussons", note: .init(type: .environnement, value: 30, info: "Nul"), type: .shoes, favorite: false, image: nil)]
 
 struct Textile: Equatable {
     var brand: String = ""
