@@ -25,7 +25,7 @@ struct Textile: Equatable {
     static var clothes : [String] = [] // tableau
 
     enum TypeOfClothes {
-        case tshirt, dress, shoes, sheets, pants, underwear, sweater
+        case tshirt, dress, shoes, sheets, pants, underwear, sweater, chemise, costume
     }
 
     enum TypeOfEvaluation {

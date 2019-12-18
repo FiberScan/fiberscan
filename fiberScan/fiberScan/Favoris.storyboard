@@ -63,7 +63,6 @@
                                                 <constraint firstItem="rvu-CF-aL6" firstAttribute="top" secondItem="P7c-Mt-eAt" secondAttribute="bottom" id="jcm-u3-QVQ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="120" height="120"/>
                                         <connections>
                                             <outlet property="FavorisCollectionViewCell" destination="1nw-KJ-f4y" id="yZ3-Ot-GVL"/>
