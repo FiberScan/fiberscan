@@ -8,7 +8,8 @@
 
 import UIKit
 
-class HistoriqueViewController: UIViewController {
+
+class HistoriqueViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -39,6 +40,12 @@ class HistoriqueViewController: UIViewController {
             data.remove(at: index)
             collectionView.reloadData()
         }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+////        let widthElement  = collectionView.frame.size.width / 3
+////        return CGSize(width: 200, height: 200)
+//
+//    }
     
     @IBAction func buttonDeleteAllAction(_ sender: UIButton) {
         data.removeAll()
