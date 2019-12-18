@@ -13,10 +13,8 @@ class HistoriqueViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var butonDeleteAll: UIButton!
-    
-    let vet = Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: false, image: nil )
-    let s = Textile.clothes
-//    
+
+//
 //    func average() {
 //        let firstNote = Textile.Note(type: .health, value: 34, info: "blabla")
 //        let secondNote = Textile.Note(type: .human, value: 50, info: "blabla")
@@ -25,15 +23,15 @@ class HistoriqueViewController: UIViewController {
 //        print(avg)
 //    }
  
-   var data: [Textile] = [Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 45, info: "blabla"), type: .dress, favorite: true, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 34, info: "blabla"), type: .dress, favorite: true, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 26, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 64, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 32, info: "blabla"), type: .dress, favorite: false, image: nil), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 44, info: "blabla"), type: .dress, favorite: false, image: nil)]
+   var data: [Textile] = [Textile(brand: "MANGO", barCode: "8445035330890", name: "robe", note: .init(type: .environnement, value: 28, info: "Nul"), type: .dress, favorite: false, image: #imageLiteral(resourceName: "53085022_20")), Textile(brand: "C&A", barCode: "5855481136712", name: "chaussons", note: .init(type: .environnement, value: 30, info: "Nul"), type: .shoes, favorite: false, image: #imageLiteral(resourceName: "2079054-1-08")), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 26, info: "blabla"), type: .dress, favorite: false, image: #imageLiteral(resourceName: "c5-680x680")), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 64, info: "blabla"), type: .dress, favorite: false, image: #imageLiteral(resourceName: "shopping")), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health, value: 32, info: "blabla"), type: .dress, favorite: false, image: #imageLiteral(resourceName: "veste-de-costume-regular-en-twill-bleu-marine-homme-ti550_2_fcf1")), Textile(brand: "SMT", barCode: "123456", name: "robe", note: Textile.Note(type: .health , value: 44, info: "blabla"), type: .dress, favorite: false, image: nil)]
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         collectionView.dataSource = self
-        collectionView.delegate = self
+        collectionView.delegate = self	
         }
     
         func remove(textile: Textile) {
