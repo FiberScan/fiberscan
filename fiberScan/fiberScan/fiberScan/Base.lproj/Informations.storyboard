@@ -25,21 +25,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veste-de-costume-regular-en-twill-bleu-marine-homme-ti550_2_fcf1" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-S8-eCY">
-                                                    <rect key="frame" x="20" y="19" width="138" height="135"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="53085022_20" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-S8-eCY">
+                                                    <rect key="frame" x="20" y="19" width="135" height="135"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHEMISE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-LR-NvZ">
-                                                    <rect key="frame" x="177" y="19" width="115" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="ROBE MANGO" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-LR-NvZ">
+                                                    <rect key="frame" x="163" y="19" width="201" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="115" id="U5P-ol-Kbk"/>
                                                         <constraint firstAttribute="height" constant="30" id="Ydh-vz-xt8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score 31/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eru-NF-2oR">
-                                                    <rect key="frame" x="166" y="57" width="115" height="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score 37/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eru-NF-2oR">
+                                                    <rect key="frame" x="163" y="57" width="115" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="Qtm-hz-Swd"/>
                                                         <constraint firstAttribute="width" constant="115" id="pdf-M7-ZKR"/>
@@ -65,8 +64,8 @@
                                                 <constraint firstItem="gux-2O-Bdm" firstAttribute="top" secondItem="97d-lD-o9Y" secondAttribute="top" constant="22" id="3UF-Vc-X2W"/>
                                                 <constraint firstItem="fLG-S8-eCY" firstAttribute="top" secondItem="97d-lD-o9Y" secondAttribute="topMargin" constant="8" id="7IZ-Do-PTR"/>
                                                 <constraint firstAttribute="trailing" secondItem="gux-2O-Bdm" secondAttribute="trailing" constant="17" id="98T-cB-ab1"/>
-                                                <constraint firstItem="Bba-LR-NvZ" firstAttribute="leading" secondItem="fLG-S8-eCY" secondAttribute="trailing" constant="19" id="AZ3-vh-4j5"/>
-                                                <constraint firstItem="gux-2O-Bdm" firstAttribute="leading" secondItem="Bba-LR-NvZ" secondAttribute="trailing" constant="80" id="Dub-ae-7yY"/>
+                                                <constraint firstItem="Bba-LR-NvZ" firstAttribute="leading" secondItem="fLG-S8-eCY" secondAttribute="trailing" constant="8" id="AZ3-vh-4j5"/>
+                                                <constraint firstItem="gux-2O-Bdm" firstAttribute="leading" secondItem="Bba-LR-NvZ" secondAttribute="trailing" constant="8" id="Dub-ae-7yY"/>
                                                 <constraint firstAttribute="bottom" secondItem="gux-2O-Bdm" secondAttribute="bottom" constant="133" id="LkT-Cp-d31"/>
                                                 <constraint firstItem="Bba-LR-NvZ" firstAttribute="top" secondItem="97d-lD-o9Y" secondAttribute="topMargin" constant="8" id="SBp-ik-UHs"/>
                                                 <constraint firstItem="eru-NF-2oR" firstAttribute="top" secondItem="Bba-LR-NvZ" secondAttribute="bottom" constant="8" id="biA-Rl-NG4"/>
@@ -99,7 +98,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8t-Gi-kmI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8t-Gi-kmI">
                                                     <rect key="frame" x="260" y="2" width="75" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="Afc-Xy-uJh"/>
@@ -141,7 +140,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O5-BE-eUh">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O5-BE-eUh">
                                                     <rect key="frame" x="260" y="2" width="75" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="rqg-yS-fi1"/>
@@ -184,7 +183,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQf-HD-8ol">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQf-HD-8ol">
                                                     <rect key="frame" x="260" y="2" width="75" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="75" id="Oc1-pi-iQP"/>
@@ -220,27 +219,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping" translatesAutoresizingMaskIntoConstraints="NO" id="ScB-p6-upx">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people-tree" translatesAutoresizingMaskIntoConstraints="NO" id="ScB-p6-upx">
                                                     <rect key="frame" x="20" y="18" width="120" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="120" id="fmr-2p-mGk"/>
                                                         <constraint firstAttribute="width" constant="120" id="h2G-RL-1hN"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t5-pI-sjK">
-                                                    <rect key="frame" x="40" y="145" width="100" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robe Jux " textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t5-pI-sjK">
+                                                    <rect key="frame" x="33" y="145" width="107" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="jac-V7-Wcn"/>
+                                                        <constraint firstAttribute="width" constant="107" id="jac-V7-Wcn"/>
                                                         <constraint firstAttribute="height" constant="30" id="trd-3F-FpT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chemise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiE-dK-4F9">
-                                                    <rect key="frame" x="267" y="145" width="100" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Robe Komodo" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiE-dK-4F9">
+                                                    <rect key="frame" x="252" y="145" width="137" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="AYK-4t-DMy"/>
+                                                        <constraint firstAttribute="width" constant="137" id="AYK-4t-DMy"/>
                                                         <constraint firstAttribute="height" constant="30" id="VGp-I7-F1k"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -267,7 +266,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="c5-680x680" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-Y1-7mY">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="robe-kesac" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-Y1-7mY">
                                                     <rect key="frame" x="247" y="18" width="120" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="jhS-gk-6DW"/>
@@ -277,9 +276,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="eU0-k1-3VJ" firstAttribute="top" secondItem="2t5-pI-sjK" secondAttribute="bottom" constant="8" id="4lT-q9-yFJ"/>
-                                                <constraint firstItem="2t5-pI-sjK" firstAttribute="leading" secondItem="wlf-78-SHR" secondAttribute="leadingMargin" constant="20" id="70t-BB-HhE"/>
+                                                <constraint firstItem="2t5-pI-sjK" firstAttribute="leading" secondItem="wlf-78-SHR" secondAttribute="leadingMargin" constant="13" id="70t-BB-HhE"/>
                                                 <constraint firstItem="sg1-Rn-cJn" firstAttribute="leading" secondItem="eU0-k1-3VJ" secondAttribute="trailing" constant="152" id="C9r-om-dje"/>
-                                                <constraint firstItem="yiE-dK-4F9" firstAttribute="leading" secondItem="2t5-pI-sjK" secondAttribute="trailing" constant="127" id="CHU-lY-YTh"/>
+                                                <constraint firstItem="yiE-dK-4F9" firstAttribute="leading" secondItem="2t5-pI-sjK" secondAttribute="trailing" constant="112" id="CHU-lY-YTh"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="sg1-Rn-cJn" secondAttribute="trailing" constant="27" id="IQu-Ce-8vU"/>
                                                 <constraint firstItem="sg1-Rn-cJn" firstAttribute="top" secondItem="yiE-dK-4F9" secondAttribute="bottom" constant="8" id="Khr-fG-9S8"/>
                                                 <constraint firstItem="ScB-p6-upx" firstAttribute="top" secondItem="wlf-78-SHR" secondAttribute="topMargin" constant="7" id="M88-L9-i9E"/>
@@ -290,7 +289,7 @@
                                                 <constraint firstItem="eU0-k1-3VJ" firstAttribute="leading" secondItem="wlf-78-SHR" secondAttribute="leadingMargin" constant="45" id="gl5-gw-cQ9"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="sg1-Rn-cJn" secondAttribute="bottom" constant="21" id="h8n-fV-bZe"/>
                                                 <constraint firstItem="bFj-Y1-7mY" firstAttribute="top" secondItem="wlf-78-SHR" secondAttribute="top" constant="8" id="jZj-V5-aTu"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yiE-dK-4F9" secondAttribute="trailing" constant="27" id="kHw-Ro-eA8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yiE-dK-4F9" secondAttribute="trailing" constant="5" id="kHw-Ro-eA8"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eU0-k1-3VJ" secondAttribute="bottom" constant="21" id="kWd-Nw-8Ib"/>
                                                 <constraint firstItem="2t5-pI-sjK" firstAttribute="top" secondItem="ScB-p6-upx" secondAttribute="bottom" constant="7" id="neG-PJ-S46"/>
                                             </constraints>
@@ -348,26 +347,26 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 30/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-hm-2AI">
-                                                <rect key="frame" x="163" y="49" width="101" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 33/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-hm-2AI">
+                                                <rect key="frame" x="163" y="49" width="101" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veste-de-costume-regular-en-twill-bleu-marine-homme-ti550_2_fcf1" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-Pb-Jzd">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="53085022_20" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-Pb-Jzd">
                                                 <rect key="frame" x="20" y="17" width="135" height="135"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="135" id="8JH-ua-lTh"/>
                                                     <constraint firstAttribute="height" constant="135" id="csv-M8-uao"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHEMISE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncb-Fv-FzB">
-                                                <rect key="frame" x="174" y="17" width="85.5" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROBE MANGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncb-Fv-FzB">
+                                                <rect key="frame" x="174" y="17" width="130" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPT-eE-eYU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPT-eE-eYU">
                                                 <rect key="frame" x="20" y="219.5" width="374" height="649.5"/>
                                                 <string key="text">Matière utilisée: 100% viscose
 La viscose est une matière chimique artificielle obtenue à partir de cellulose extraite de végétaux. Elle nécessite l’utilisation de disulfure de carbone et d’acides sulfuriques. Ces solvants, toxiques et polluants ne sont pas recyclés lors du processus de fabrication et se retrouvent parfois déversés dans la nature.
@@ -432,20 +431,20 @@ La marque est labéllisée Global Organic Textile Standard mais n’indique pas 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veste-de-costume-regular-en-twill-bleu-marine-homme-ti550_2_fcf1" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-oJ-Uvi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="53085022_20" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-oJ-Uvi">
                                 <rect key="frame" x="20" y="105" width="135" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="135" id="04q-S9-XJh"/>
                                     <constraint firstAttribute="width" constant="135" id="fqn-4L-uen"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHEMISE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP6-Xa-IU9">
-                                <rect key="frame" x="174" y="105" width="85.5" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROBE MANGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP6-Xa-IU9">
+                                <rect key="frame" x="174" y="105" width="130" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-ex-aFp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-ex-aFp">
                                 <rect key="frame" x="20" y="320" width="374" height="203"/>
                                 <string key="text">Produit fabriqué en Chine
 La marque ne communique pas d’informations sur ses fournisseurs mais s’est engagée à garantir à tous ses employés des conditions de travail conformes au cadre législatif en vigueur. Elle garantit également l’égalité de traitement et l’égalité des chances aux employés, clients et fournisseurs.
@@ -456,8 +455,8 @@ La marque ne communique pas d’informations sur ses fournisseurs mais s’est e
                                 <nil key="highlightedColor"/>
                                 <string key="userLabel">Produit fabriqué en Chine La marque ne communique pas d’informations sur ses fournisseurs mais s’est engagée à garantir à tous ses employés des conditions de travail conformes au cadre législatif en vigueur. Elle garantit également l’égalité de traitement et l’égalité des chances aux employés, clients et fournisseurs.</string>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 30/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfT-0l-Y7y">
-                                <rect key="frame" x="163" y="137" width="101" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 28/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfT-0l-Y7y">
+                                <rect key="frame" x="163" y="137" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -504,10 +503,10 @@ La marque ne communique pas d’informations sur ses fournisseurs mais s’est e
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHEMISE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CE-Td-zAJ">
-                                <rect key="frame" x="174" y="105" width="115" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROBE MANGO" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CE-Td-zAJ">
+                                <rect key="frame" x="174" y="105" width="189" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="DHv-mg-try"/>
+                                    <constraint firstAttribute="width" constant="189" id="DHv-mg-try"/>
                                     <constraint firstAttribute="height" constant="30" id="xbr-hg-T4P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -524,7 +523,7 @@ La marque ne communique pas d’informations sur ses fournisseurs mais s’est e
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-Pl-8yu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-Pl-8yu">
                                 <rect key="frame" x="20" y="320" width="374" height="304.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="jt1-Pd-XIK"/>
@@ -539,7 +538,7 @@ Les peaux sensibles peuvent être affectées par ce type des  composants, c'est 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 33/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05i-gf-oaq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score 50/100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05i-gf-oaq">
                                 <rect key="frame" x="163" y="143" width="115" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="Kbz-Rl-cmZ"/>
@@ -549,7 +548,7 @@ Les peaux sensibles peuvent être affectées par ce type des  composants, c'est 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veste-de-costume-regular-en-twill-bleu-marine-homme-ti550_2_fcf1" translatesAutoresizingMaskIntoConstraints="NO" id="nHY-5g-Xew">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="53085022_20" translatesAutoresizingMaskIntoConstraints="NO" id="nHY-5g-Xew">
                                 <rect key="frame" x="20" y="105" width="135" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="135" id="4MZ-dJ-GA5"/>
@@ -602,9 +601,9 @@ Les peaux sensibles peuvent être affectées par ce type des  composants, c'est 
         </scene>
     </scenes>
     <resources>
-        <image name="c5-680x680" width="680" height="680"/>
+        <image name="53085022_20" width="1256" height="1757"/>
         <image name="heart" catalog="system" width="64" height="54"/>
-        <image name="shopping" width="366" height="368"/>
-        <image name="veste-de-costume-regular-en-twill-bleu-marine-homme-ti550_2_fcf1" width="600" height="600"/>
+        <image name="people-tree" width="178" height="240"/>
+        <image name="robe-kesac" width="458" height="458"/>
     </resources>
 </document>
