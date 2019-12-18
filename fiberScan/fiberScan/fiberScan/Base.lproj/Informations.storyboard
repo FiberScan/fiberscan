@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQg-1c-uGe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQg-1c-uGe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -367,8 +367,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPT-eE-eYU">
-                                                <rect key="frame" x="20" y="219.5" width="374" height="649.5"/>
-                                                <string key="text">Matière utilisée: 100% viscose
+                                                <rect key="frame" x="20" y="219.5" width="374" height="669.5"/>
+                                                <mutableString key="text">Matière utilisée: 100% viscose
 La viscose est une matière chimique artificielle obtenue à partir de cellulose extraite de végétaux. Elle nécessite l’utilisation de disulfure de carbone et d’acides sulfuriques. Ces solvants, toxiques et polluants ne sont pas recyclés lors du processus de fabrication et se retrouvent parfois déversés dans la nature.
 La fabrication de la viscose nécessite une consommation importante d'eau et de cellulose de bois et participe ainsi à la déforestation. La fabrication d’un kilo de viscose nécessite 400 à 11 000 litres d’eau. Chaque année, 70 millions d’arbres sont abattus pour produire 5 millions de tonnes de viscose.
 
@@ -376,7 +376,7 @@ Nous vous conseillons de privilégier des matières écologiques comment le lyoc
 le chanvre.
 
 Mango s’est engagé, via son programme “Take action” à optimiser la consommation de ressources et à mettre en oeuvre des améliorations visant à atténuer son impact sur l’environnement.
-La marque est labéllisée Global Organic Textile Standard mais n’indique pas le pourcentage de produits concerné.</string>
+La marque est labéllisée Global Organic Textile Standard mais n’indique pas le pourcentage de produits concerné.                                                                                                                                 Sources: données publiques</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -449,7 +449,7 @@ La marque est labéllisée Global Organic Textile Standard mais n’indique pas 
                                 <string key="text">Produit fabriqué en Chine
 La marque ne communique pas d’informations sur ses fournisseurs mais s’est engagée à garantir à tous ses employés des conditions de travail conformes au cadre législatif en vigueur. Elle garantit également l’égalité de traitement et l’égalité des chances aux employés, clients et fournisseurs.
 
-</string>
+Sources: données publiques</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -524,16 +524,16 @@ La marque ne communique pas d’informations sur ses fournisseurs mais s’est e
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-Pl-8yu">
-                                <rect key="frame" x="20" y="320" width="374" height="304.5"/>
+                                <rect key="frame" x="20" y="320" width="374" height="325"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="jt1-Pd-XIK"/>
                                 </constraints>
-                                <string key="text">La fabrication de la viscose a un impact négatif sur la santé des personnes travaillant avec cette matière.
+                                <mutableString key="text">La fabrication de la viscose a un impact négatif sur la santé des personnes travaillant avec cette matière.
 
 Les produits chimiques utilisés dans le procédé viscose deviennent des composants à part entière et restent présents dans les tissus fabriqués malgré les traitements (teinture, impression, finitions, lavages).
 
-Les peaux sensibles peuvent être affectées par ce type des  composants, c'est pourquoi nous recommandons de laver les vêtements avant de les porter pour la première fois.
-</string>
+Les peaux sensibles peuvent être affectées par ce type des  composants, c'est pourquoi nous recommandons de laver les vêtements avant de les porter pour la première fois.        
+                                                                                                                                                                                                                                                                                                                                                                                   Sources: données publiques</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
