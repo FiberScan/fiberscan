@@ -38,7 +38,4 @@ class CollectionViewCellFavoris: UICollectionViewCell {
     @IBAction func buttonDelActionF(_ sender: Any) {
          viewController?.remove(textile: textile)
     }
-    
-    
-    
 }

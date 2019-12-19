@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-let fakeDataBase = ["8445035330890": Textile(brand: "MANGO", barCode: "8445035330890", name: "robe", note: .init(type: .environnement, value: 30, info: "Nul"), type: .dress, favorite: false, image: nil)]
+let fakeDataBase = ["5411188128045": Textile(brand: "MANGO", barCode: "5411188128045", name: "robe", note: .init(type: .environnement, value: 30, info: "Nul"), type: .dress, favorite: false, image: #imageLiteral(resourceName: "53085022_20"))]
 
-let fakeDataBase2 = ["5855481136712": Textile(brand: "C&A", barCode: "5855481136712", name: "chaussons", note: .init(type: .environnement, value: 30, info: "Nul"), type: .shoes, favorite: false, image: nil)]
+let fakeDataBase2 = ["5855481136712": Textile(brand: "C&A", barCode: "5855481136712", name: "chaussons", note: .init(type: .environnement, value: 30, info: "Nul"), type: .shoes, favorite: false, image: #imageLiteral(resourceName: "2079054-1-08"))]
+
 
 struct Textile: Equatable {
     var brand: String = ""
@@ -24,7 +25,7 @@ struct Textile: Equatable {
     static var clothes : [String] = [] // tableau
 
     enum TypeOfClothes {
-        case tshirt, dress, shoes, sheets, pants, underwear, sweater
+        case tshirt, dress, shoes, sheets, pants, underwear, sweater, chemise, costume
     }
 
     enum TypeOfEvaluation {

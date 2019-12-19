@@ -42,6 +42,7 @@ class InformationsViewController: UITableViewController {
     @IBOutlet weak var nameAlternativeProductLeft: UILabel!
     @IBOutlet weak var noteAlternativeProductLeft: UILabel!
     
+
     @IBOutlet weak var imageAlternativeProductRight: UIImageView!
     @IBOutlet weak var nameAlternativeProductRight: UILabel!
     @IBOutlet weak var noteAlternativeProductRight: UILabel!

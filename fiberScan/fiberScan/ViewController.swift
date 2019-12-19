@@ -123,7 +123,14 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
                 metadataOutput.metadataObjectTypes = [
                    
-                    .ean13
+                    .code128,
+                    .code39,
+                    .code93,
+                    .ean13,
+                    .ean8,
+                    .qr,
+                    .upce
+
             
                 ]
 
